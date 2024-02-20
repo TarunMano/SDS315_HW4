@@ -39,7 +39,7 @@ higherM = round(conf_comp[1,3] - conf_comp[2,3],2)
 ggplot(gasprices) + geom_boxplot(aes(x = Competitors, y = Price), fill = 'skyblue') + labs(title = "Price vs The Presence of a Competitor")
 ```
 
-Gas stations charge more if they lack direct competition in sight, this theory is seemingly true, as according to the data. On average gas stations without a direct competitor have a price of somewhere between `r round(conf_comp[1,2],2)` and `r round(conf_comp[1,3],2)`, with 95% confidence. Gas stations with a direct competitor in sight however have a price of somewhere between `r round(conf_comp[2,2],2)` and `r round(conf_comp[2,3],2)`, with 95% confidence. As such the difference in price between having a direct competitor in sight and not is somewhere between `r lowerM` and `r higherM` cents. In conclusion the theory of if gas stations charge in the presence of a direct competitor is true by somewhere between 2 to 3 cents.
+Gas stations charge more if they lack direct competition in sight, this theory is seemingly true, as according to the data. On average gas stations without a direct competitor have a price of somewhere between `r round(conf_comp[1,2],2)` and `r round(conf_comp[1,3],2)`, with 95% confidence. Gas stations with a direct competitor in sight however have a price of somewhere between `r round(conf_comp[2,2],2)` and `r round(conf_comp[2,3],2)`, with 95% confidence. As such the difference in price between having a direct competitor in sight and not is somewhere between `r lowerM` and `r higherM`. In conclusion the theory of if gas stations charge in the presence of a direct competitor is true by somewhere between 2 to 3 cents.
 
 ### Theory 2
 
